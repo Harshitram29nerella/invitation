@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harshitram</title>
+  <link rel="stylesheet" href="birthday.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="circle-images">
+      <img src="1.jpg" alt="Balloon1" class="circle-item">
+      <img src="2.jpg" alt="Balloon2" class="circle-item">
+      <img src="3.jpg" alt="Balloon3" class="circle-item">
+      <img src="4.jpg" alt="Balloon4" class="circle-item">
+      <img src="5.jpg" alt="Balloon5" class="circle-item">
+      <img src="6.jpg" alt="Balloon6" class="circle-item">
+      <img src="7.jpg" alt="Balloon7" class="circle-item">
+      <img src="8.jpg" alt="Balloon8" class="circle-item">
+      <img src="9.jpg" alt="Balloon9" class="circle-item">
+      <img src="birthday.jpg" alt="Balloon10" class="circle-item">
+      <img src="11.jpg" alt="Balloon11" class="circle-item">
+      <img src="12.jpg" alt="Balloon12" class="circle-item">
+    </div>
+
+    <div class="card">
+      <h1>Come and join us for some Birthday Fun!</h1>
+      <p class="para"><strong>Our little cupcake is turning ONE!</strong></p>
+      <p class="harshitram">Harshitram</p>
+      <div class="details">
+        <p><strong>Date:</strong> 29th December 2024</p>
+        <p><strong>Time:</strong> 6 : 00pm</p>
+        <p><strong>Venue:</strong> Near small mosque,Bradipeta, Ramachandrapuram</p>
+      </div>
+      <a href="https://wa.me/9700359092?text=Happy%20Birthday%20to%20the%20little%20Harshitram!" class="whatsapp-button" target="_blank">Click to Wish on WhatsApp</a>
+      <a href="https://maps.app.goo.gl/TVwHiH69Njz1VfYM9" class="location-button" target="_blank">Check Location</a>
+    </div>
+  </div>
+  <div class="scroll-text">
+    <p>Family love all around! Celebrating the baby's first birthday with relatives who bring warmth and joy! From Grandma's sweet blessings to Uncle's cheerful laughter, and cousins' playful giggles, every moment is filled with love and happiness. Together, we make this day truly unforgettable and cherished memories!</p>
+  </div>
+  <footer>
+    &copy;<span class="footer-name-change"> PVS Chandra Shekar </span>
+    <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/venkata-satya-chandra-shekar-parepalli-312b431b4/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin" style="font-size: 24px; color: #0a66c2;"></i>
+        </a>
+        <a href="https://wa.me/9179935165291" target="_blank" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp" style="font-size: 24px; color: #25D366;"></i>
+        </a>
+      </div>
+  </footer>
+
+  <!-- Audio element with muted initially -->
+  <audio id="background-audio" autoplay loop muted>
+    <source src="birthdayaudio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- JavaScript to unmute and ensure audio starts playing on user interaction -->
+  <script>
+    document.body.addEventListener('click', function() {
+      var audio = document.getElementById('background-audio');
+      audio.muted = false; // Unmute the audio
+      audio.play().catch(function(error) {
+        console.log("Error playing audio: ", error);
+      });
+    });
+  </script>
+</body>
+</html>
